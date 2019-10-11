@@ -7,7 +7,7 @@ class Conocenos extends React.Component {
         return (
             <div>
                 <TituloSeccion title="Conócenos" />
-                <div class="row m-0 text-center">
+                <div class="row m-0 text-center justify-content-center">
                     <TarjetaMiembro
                         imagen="david"
                         nombre="David Magallán"

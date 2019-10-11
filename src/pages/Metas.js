@@ -5,7 +5,7 @@ import ContenedorMeta from '../components/ContenedorMeta';
 class Metas extends Component {
   render() {
     return (
-        <div>
+        <div className="row container-fluid justify-content-center mb-xl-5 pb-xl-2">
 
             <div class="col-11 col-lg-5 m-4">
                 <TituloSeccion title="Metas a corto plazo" />
