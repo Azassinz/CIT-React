@@ -1,0 +1,149 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+/** colores para texto **/
+.gris {
+  color: #444444 !important;
+}
+
+.guindo {
+  color: #87181f !important;
+}
+
+.cyan {
+  color: #00adf7 !important;
+}
+
+.blanco {
+  color: #fff !important;
+}
+
+.azul {
+  color: #1793f3 !important;
+}
+/** fin colores texto **/
+
+/**tarjetas nosotros **/
+.single-service {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 30px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+}
+.single-service:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #00adf7;
+  left: 0;
+  top: 0;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-service:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #00adf7;
+  right: 0;
+  bottom: 0;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-service:hover:after,
+.single-service:hover:before {
+  width: 50%;
+  height: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-service:hover {
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.single-service i.fa {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #00adf7;
+  line-height: 60px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-service:hover i.fa {
+  background-color: #87181f;
+  color: #87181f;
+  border-color: #87181f;
+  border-radius: 0;
+}
+.single-service h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.single-service p {
+  font-size: 1em;
+  line-height: 1.8;
+}
+.cards-inicio {
+  height: 80%;
+}
+/**fin tarjeta nosotros**/
+
+/**Titulo Seccion**/
+.section-title {
+  position: relative;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.section-title p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.section-title h4 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.section-title h4:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #d8d8d8;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+.section-title h4:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #00adf7;
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+/**fin Titulo Seccion**/
