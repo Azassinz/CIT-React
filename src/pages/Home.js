@@ -20,6 +20,7 @@ class Home extends React.Component {
 
             <div className="row justify-content-center m-0">
                 <TarjetaNosotros
+                    grids="col-lg-4 col-md-6 "
                     icon="fa fa-flag cyan"
                     title="Misión"
                     content="Ser un grupo de estudiantes multidisciplinario que impulse la aplicación de las nuevas tendencias
@@ -27,6 +28,7 @@ class Home extends React.Component {
                     Saltillo."
                 />
                 <TarjetaNosotros
+                    grids="col-lg-4 col-md-6 "
                     icon="fa fa-eye cyan"
                     title="Visión"
                     content="Ser reconocidos como el grupo estudiantil modelo para la incursión de las nuevas tecnologías
@@ -34,7 +36,8 @@ class Home extends React.Component {
                     dentro de nuestra comunidad, en sinergia con el “HUB Innovación Coahuila 4.0”."
                 />
                 <TarjetaNosotros
-                    icon="fa fa-users cyan"
+                    grids="col-lg-4 col-md-6 "
+                    icon="fa fa-handshake-o cyan"
                     title="¿Qué nos representa?"
                     content={
                         <div className="row gris">

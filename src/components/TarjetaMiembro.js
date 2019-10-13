@@ -3,7 +3,7 @@ import React from 'react';
 class TarjetaMiembro extends React.Component {
     render() {
         return (
-            <div className="col-xl-3 col-sm-6 mb-5">
+            <div className="col-xl-auto col-md-4 col-sm-6 mb-5">
                 <div className="bg-white rounded shadow-sm py-5 px-4"><img
                     src={require(`../assets/images/miembros/${this.props.imagen}.png`)} alt="" width="100"
                     className="img-fluid mb-3  " />

@@ -53,6 +53,11 @@ class Footer extends React.Component {
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
+                                    <li className="list-inline-item">
+                                        <a href="https://www.instagram.com/cit_its/" className="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i className="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

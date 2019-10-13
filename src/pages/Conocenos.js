@@ -86,6 +86,21 @@ class Conocenos extends React.Component {
                         nombre="Salma Webb"
                         puesto="Programación"
                     />
+                    <TarjetaMiembro
+                        imagen="abel"
+                        nombre="Abel Monsivais"
+                        puesto="Manejo de Personal - Fundador"
+                    />
+                    <TarjetaMiembro
+                        imagen="kineret"
+                        nombre="Kineret Rivera"
+                        puesto="Vinculación - Fundador"
+                    />
+                    <TarjetaMiembro
+                        imagen="marcela"
+                        nombre="Marcela Zertuche"
+                        puesto="Innovación"
+                    />
                 </div>
             </div>
         );
