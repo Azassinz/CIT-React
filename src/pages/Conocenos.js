@@ -2,40 +2,79 @@ import React from 'react';
 import TituloSeccion from '../components/TituloSeccion';
 import TarjetaMiembro from '../components/TarjetaMiembro';
 
+import LocalizedStrings from 'react-localization';
+
+let strings = new LocalizedStrings({
+    es: {
+      conocenos: "Conócenos",
+      presidente: "Presidente - Fundador",
+      vice: "Vicepresidente - Fundador",
+      disenoF: "Jefe de Diseño - Fundador",
+      secretario: "Secretario - Fundador",
+      tesorero: "Tesorero - Fundador",
+      programadorF: "Programación - Fundador",
+      diseno: "Diseño",
+      programador: "Programación",
+      rs: "Redes Sociales",
+      mecanica: "Mecánica",
+      log: "Lógistica",
+      hr: "Manejo de Personal - Fundador",
+      innovacion: "Innovación",
+      vinculacion: "Vinculación - Fundador"
+    },
+    en: {
+      conocenos: "Know us",
+      presidente: "President - Founder",
+      vice: "Vice president - Founder",
+      disenoF: "Chief Designer Officer - Founder",
+      secretario: "Secretary - Founder",
+      tesorero: "Treasurer - Founder",
+      programadorF: "Programmer - Founder",
+      diseno: "Designer",
+      programador: "Programmer",
+      rs: "Social networks",
+      mecanica: "Mechanics",
+      log: "Logistics",
+      hr: "Human Resources - Founder",
+      innovacion: "Innovation",
+      vinculacion: "Linking Relations - Founder" 
+    }
+});
+
 class Conocenos extends React.Component {
     render() {
         return (
             <div>
-                <TituloSeccion title="Conócenos" />
+                <TituloSeccion title={strings.conocenos} />
                 <div class="row m-0 text-center justify-content-center">
                     <TarjetaMiembro
                         imagen="david"
                         nombre="David Magallán"
-                        puesto="Presidente - Fundador"
+                        puesto={strings.presidente}
                         enlace="https://www.linkedin.com/in/david-magall%C3%A1n-515865180/"
                     />
                     <TarjetaMiembro
                         imagen="davidlopez"
                         nombre="David López"
-                        puesto="VicePresidente - Fundador"
+                        puesto={strings.vice}
                         enlace="https://www.linkedin.com/in/luis-david-l%C3%B3pez-valdes-b61451153/"
                     />
                     <TarjetaMiembro
                         imagen="alex"
-                        nombre="Fernando Pinedo"
-                        puesto="Jefe de Diseño - Fundador"
+                        nombre="Alejandro Vilchis"
+                        puesto={strings.disenoF}
                         enlace="https://www.linkedin.com/in/alexvilchis/"
                     />
                     <TarjetaMiembro
                         imagen="pinedo"
-                        nombre="Alejandro Vilchis"
-                        puesto="Secretario - Fundador"
+                        nombre="Fernando Pinedo "
+                        puesto={strings.secretario}
                         enlace="https://www.linkedin.com/in/fernando-josue-pinedo-a85398128/"
                     />
                     <TarjetaMiembro
                         imagen="nico"
                         nombre="Nicolás Cázares"
-                        puesto="Tesorero - Fundador"
+                        puesto={strings.tesorero}
                     />
                     <TarjetaMiembro
                         imagen="sergio"
@@ -46,70 +85,70 @@ class Conocenos extends React.Component {
                     <TarjetaMiembro
                         imagen="andres"
                         nombre="Andres Ramos"
-                        puesto="Programación - Fundador"
+                        puesto={strings.programadorF}
                         enlace="https://www.linkedin.com/in/andrés-ramos-córdova-151a2b16a"
                     />
                     <TarjetaMiembro
                         imagen="jorge"
                         nombre="Jorge Ostos"
-                        puesto="Diseño"
+                        puesto={strings.diseno}
                         enlace="https://www.linkedin.com/in/jorge-contreras-ostos-66718a171/"
                     />
                     <TarjetaMiembro
                         imagen="alexis"
                         nombre="Alexis González"
-                        puesto="Programación"
+                        puesto={strings.programador}
                         enlace="https://www.linkedin.com/in/alexis-ricardo-garcia-gonzalez-30346a186"
                     />
                     <TarjetaMiembro
                         imagen="janice"
                         nombre="Janice Herrera"
-                        puesto="Redes Sociales"
+                        puesto={strings.rs}
                     />
                     <TarjetaMiembro
                         imagen="guillermo"
                         nombre="Guillermo Villarreal"
-                        puesto="Macánica"
+                        puesto={strings.mecanica}
                     />
                     <TarjetaMiembro
                         imagen="mariana"
                         nombre="Mariana Villarreal"
-                        puesto="Lógistica"
+                        puesto={strings.log}
                     />
                     <TarjetaMiembro
                         imagen="gabriela"
                         nombre="Gabriela Gonzalez"
-                        puesto="Programación"
+                        puesto={strings.programador}
                     />
                     <TarjetaMiembro
                         imagen="salma"
                         nombre="Salma Webb"
-                        puesto="Programación"
+                        puesto={strings.programador}
                     />
                     <TarjetaMiembro
                         imagen="abel"
                         nombre="Abel Monsivais"
-                        puesto="Manejo de Personal - Fundador"
+                        puesto={strings.hr}
                     />
                     <TarjetaMiembro
                         imagen="kineret"
                         nombre="Kineret Rivera"
-                        puesto="Vinculación - Fundador"
+                        puesto={strings.vinculacion}
                     />
                     <TarjetaMiembro
                         imagen="marcela"
                         nombre="Marcela Zertuche"
-                        puesto="Innovación"
+                        puesto={strings.innovacion}
                     />
                     <TarjetaMiembro
                         imagen="monica"
                         nombre="Mónica Vázquez"
-                        puesto="Innovación"
+                        puesto={strings.innovacion}
                     />
                     <TarjetaMiembro
                         imagen="andrea"
                         nombre="Andrea Payan"
-                        puesto="Logística"
+                        puesto={strings.log}
                     />
                 </div>
             </div>

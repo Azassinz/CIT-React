@@ -1,5 +1,16 @@
 import React from 'react';
 
+import LocalizedStrings from 'react-localization';
+
+let strings = new LocalizedStrings({
+    es: {
+        Contacto: "Contacto",
+    },
+    en: {
+        Contacto: "Contact",
+    }
+});
+
 class Footer extends React.Component {
     render() {
         return (
@@ -20,7 +31,7 @@ class Footer extends React.Component {
                         <hr className="w-100 clearfix d-md-none" />
 
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 className="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                            <h6 className="text-uppercase mb-4 font-weight-bold">{strings.Contacto}</h6>
                             <p><i className="fas fa-home mr-3"></i> Saltillo, Coah. 25280, México</p>
                             <p>
                                 <a role="button" value="Enviar un email" href={"mailto:contacto@cit-its.org"} className="gris" >
