@@ -12,7 +12,7 @@ class PresentacionJumbotron extends React.Component {
                     <p className="gris" > {this.props.info} </p>
                     <p className="lead">
                         <a href={"mailto:" + this.props.email}>  
-                        <Button color="primary"> {this.props.boton} </Button>
+                        <Button className="info-btn"> {this.props.boton} </Button>
                         </a>
                     </p>
                 </Jumbotron>

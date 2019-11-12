@@ -5,8 +5,8 @@ import { Collapse,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown } from 'reactstrap';
+  import { HashLink as Link } from 'react-router-hash-link';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -29,17 +29,17 @@ export default class Example extends React.Component {
           <NavbarBrand href="/" className="mr-auto">
             <img src={require('../assets/images/logo-cit.png')} alt="logo CIT" />
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggle} aria-label="toggler"/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/" className="gris" >Inicio</NavLink>
+                <Link to="/" className="gris text-decoration-none m-2" >Inicio</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/conocenos" className="gris" >Conócenos</NavLink>
+                <Link to="/conocenos" className="gris text-decoration-none m-2" >Conócenos</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/metas" className="gris" >Metas</NavLink>
+                <Link to="/metas" className="gris text-decoration-none m-2" >Metas</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar />
             </Nav>

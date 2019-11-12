@@ -49,12 +49,12 @@ class Footer extends React.Component {
                             <div className="text-center text-md-right">
                                 <ul className="list-unstyled list-inline">
                                     <li className="list-inline-item">
-                                        <a href="https://www.facebook.com/citITS/" className="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a href="https://www.facebook.com/citITS/" aria-label="CIT Facebook" className="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <a href="https://www.instagram.com/cit_its/" className="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a href="https://www.instagram.com/cit_its/" aria-label="CIT Instagram" className="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i className="fab fa-instagram"></i>
                                         </a>
                                     </li>

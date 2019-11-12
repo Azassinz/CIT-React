@@ -10,6 +10,11 @@ html {
   font-size: 1.5em;
 }
 
+.info-btn {
+  background-color: #444444!important;
+  border-color: #444444!important;
+}
+
 /** colores para texto **/
 .gris {
   color: #444444 !important;

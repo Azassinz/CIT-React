@@ -101,6 +101,16 @@ class Conocenos extends React.Component {
                         nombre="Marcela Zertuche"
                         puesto="Innovación"
                     />
+                    <TarjetaMiembro
+                        imagen="monica"
+                        nombre="Mónica Vázquez"
+                        puesto="Innovación"
+                    />
+                    <TarjetaMiembro
+                        imagen="andrea"
+                        nombre="Andrea Payan"
+                        puesto="Logística"
+                    />
                 </div>
             </div>
         );
