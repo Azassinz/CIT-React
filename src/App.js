@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./pages/Home";
 import Conocenos from "./pages/Conocenos";
 import Metas from "./pages/Metas";
+import Noticias from "./pages/Noticias";
 
 import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
 import { Collapse,
@@ -23,6 +24,7 @@ let strings = new LocalizedStrings({
       Inicio: "Inicio",
       conocenos: "Conócenos",
       Metas: "Metas",
+      noticias: "Noticias",
       noMatch:"No se encuentra"
     },
     en: {
@@ -30,6 +32,7 @@ let strings = new LocalizedStrings({
       Inicio: "Home",
       conocenos: "Know us",
       Metas: "Goals",
+      noticias: "News",
       noMatch:"No match for"
     }
 });
@@ -82,6 +85,9 @@ export default class App extends React.Component {
                 <Link to="/metas" className="p gris text-decoration-none m-2" >{strings.Metas}</Link>
               </NavItem>
               <NavItem>
+                <Link to="/noticias" className="p gris text-decoration-none m-2" >{strings.noticias}</Link>
+              </NavItem>
+              <NavItem>
                 <Button className="text-decoration-none gris ml-2 mr-2 mt-0 mb-0 p-0" color="link" onClick={this.changeLang}>{strings.nextLang}</Button>
               </NavItem>
               <UncontrolledDropdown nav inNavbar />
@@ -98,6 +104,9 @@ export default class App extends React.Component {
             </Route>
             <Route exact path="/metas">
               <Objetivos />
+            </Route>
+            <Route exact path="/noticias">
+              <Insta />
             </Route>
             <Route path="*">
               <NoMatch />
@@ -138,6 +147,16 @@ function Objetivos() {
   return (
     <div>
       <Metas
+        language={strings.getLanguage()}
+      />
+    </div>
+  );
+}
+
+function Insta() {
+  return (
+    <div>
+      <Noticias
         language={strings.getLanguage()}
       />
     </div>
