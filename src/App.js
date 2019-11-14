@@ -1,20 +1,93 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import './App.css';
-
 import Home from "./pages/Home";
 import Conocenos from "./pages/Conocenos";
 import Metas from "./pages/Metas";
 
+import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
+import { Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  UncontrolledDropdown,
+  Button } from 'reactstrap';
+import { HashLink as Link } from 'react-router-hash-link';
+import LocalizedStrings from 'react-localization';
+
+let strings = new LocalizedStrings({
+    es: {
+      nextLang:"EN",
+      Inicio: "Inicio",
+      conocenos: "Conócenos",
+      Metas: "Metas",
+      noMatch:"No se encuentra"
+    },
+    en: {
+      nextLang:"ES",
+      Inicio: "Home",
+      conocenos: "Know us",
+      Metas: "Goals",
+      noMatch:"No match for"
+    }
+});
+
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.changeLang = this.changeLang.bind(this);
+    this.state = {
+      isOpen: false,
+      lang: true
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  changeLang() {
+    this.setState({
+      lang: !this.state.lang
+    });
+  }
   render() {
+    if(this.state.lang){
+      strings.setLanguage('es');
+    }else{
+      strings.setLanguage('en');
+    }
     return (
       <Router>
         <div>
 
-          <Navbar />
+        <Navbar color="faded" light expand="md">
+          <NavbarBrand href="/" className="mr-auto">
+            <img src={require('./assets/images/logo-cit.png')} alt="logo CIT" />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} aria-label="toggler"/>
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <Link to="/" className="p gris text-decoration-none m-2" >{strings.Inicio}</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/conocenos" className="p gris text-decoration-none m-2" >{strings.conocenos}</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/metas" className="p gris text-decoration-none m-2" >{strings.Metas}</Link>
+              </NavItem>
+              <NavItem>
+                <Button className="text-decoration-none gris ml-2 mr-2 mt-0 mb-0 p-0" color="link" onClick={this.changeLang}>{strings.nextLang}</Button>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar />
+            </Nav>
+          </Collapse>
+        </Navbar>
 
           <Switch>
             <Route exact path="/">
@@ -31,7 +104,9 @@ export default class App extends React.Component {
             </Route>
           </Switch>
 
-          <Footer />
+          <Footer
+            language={strings.getLanguage()}
+          />
 
         </div>
       </Router>
@@ -42,7 +117,9 @@ export default class App extends React.Component {
 function Inicio() {
   return (
     <div>
-      <Home />
+      <Home
+        language={strings.getLanguage()}
+      />
     </div>
   );
 }
@@ -50,7 +127,9 @@ function Inicio() {
 function Nosotros() {
   return (
     <div>
-      <Conocenos />
+      <Conocenos
+        language={strings.getLanguage()}
+      />
     </div>
   );
 }
@@ -58,7 +137,9 @@ function Nosotros() {
 function Objetivos() {
   return (
     <div>
-      <Metas />
+      <Metas
+        language={strings.getLanguage()}
+      />
     </div>
   );
 }
@@ -69,7 +150,7 @@ function NoMatch() {
   return (
     <div className="justify-content-center text-center" >
       <h3>
-        No match for <code>{location.pathname}</code>
+        {strings.noMatch} <code>{location.pathname}</code>
       </h3>
       <img className="img-fluid" src={require('./assets/images/404-min.jpg')} alt="not found" />
     </div>

@@ -37,6 +37,7 @@ let strings = new LocalizedStrings({
 
 class Metas extends Component {
   render() {
+    strings.setLanguage(this.props.language);
     return (
         <div className="row container-fluid justify-content-center mb-xl-5 pb-xl-2">
 

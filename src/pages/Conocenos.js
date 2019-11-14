@@ -20,7 +20,8 @@ let strings = new LocalizedStrings({
       log: "Lógistica",
       hr: "Manejo de Personal - Fundador",
       innovacion: "Innovación",
-      vinculacion: "Vinculación - Fundador"
+      vinculacion: "Vinculación - Fundador",
+      pClub: "Club de Programación - Fundador"
     },
     en: {
       conocenos: "Know us",
@@ -37,12 +38,14 @@ let strings = new LocalizedStrings({
       log: "Logistics",
       hr: "Human Resources - Founder",
       innovacion: "Innovation",
-      vinculacion: "Linking Relations - Founder" 
+      vinculacion: "Linking Relations - Founder",
+      pClub: "Programming Club - Founder"
     }
 });
 
 class Conocenos extends React.Component {
     render() {
+        strings.setLanguage(this.props.language);
         return (
             <div>
                 <TituloSeccion title={strings.conocenos} />
@@ -79,7 +82,7 @@ class Conocenos extends React.Component {
                     <TarjetaMiembro
                         imagen="sergio"
                         nombre="Sergio Saucedo"
-                        puesto="Club de Programación - Fundador"
+                        puesto={strings.pClub}
                         enlace="https://www.linkedin.com/in/seulsale/"
                     />
                     <TarjetaMiembro

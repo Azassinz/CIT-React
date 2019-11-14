@@ -48,6 +48,7 @@ let strings = new LocalizedStrings({
 
 class Home extends React.Component {
   render() {
+    strings.setLanguage(this.props.language);
     return (
       <div>
         <Jumbotron 
