@@ -7,7 +7,7 @@ import LocalizedStrings from 'react-localization';
 let strings = new LocalizedStrings({
     es: {
       shortGoals: "Metas a corto plazo",
-      iot: "Instituir el club de Internet de las cosas (IoT).",
+      iot: "Toma de protesta del CIT.",
       area: "Habilitar un área de desarrollo.",
       demo: "Demostración de prototipos de IoT en el concurso de programación local 2018.",
       teams: "Constituir equipos de trabajo multidisciplinarios.",
@@ -21,7 +21,7 @@ let strings = new LocalizedStrings({
     },
     en: {
       shortGoals: "Short-term goals",
-      iot: "Found the Internet of Things (IoT) club.",
+      iot: "Officially found CIT.",
       area: "Enable a development area.",
       demo: "IoT prototype demonstration in the 2018 local programming contest.",
       teams: "Build multidisciplinary work teams.",
@@ -41,51 +41,61 @@ class Metas extends Component {
     return (
         <div className="row container-fluid justify-content-center mb-xl-5 pb-xl-2">
 
-            <div class="col-11 col-lg-5 m-4">
+            <div className="col-11 col-lg-5 m-4">
                 <TituloSeccion title={strings.shortGoals} />
                 <ContenedorMeta 
                 imagen="1" 
                 descripcion={strings.iot}
+                icon="fas fa-check-circle"
                 />
                 <ContenedorMeta 
                 imagen="2" 
                 descripcion={strings.area}
+                icon="fas fa-business-time"
                 />
                 <ContenedorMeta 
                 imagen="3" 
                 descripcion={strings.demo}
+                icon="fas fa-check-circle"
                 />
                 <ContenedorMeta 
                 imagen="4" 
                 descripcion={strings.teams}
+                icon="fas fa-check-circle"
                 />
                 <ContenedorMeta 
                 imagen="5" 
                 descripcion={strings.share}
+                icon="fas fa-business-time"
                 />
                 <ContenedorMeta 
                 imagen="6" 
                 descripcion={strings.talent}
+                icon="fas fa-check-circle"
                 />
             </div>
 
-            <div class="col-11 col-lg-5 m-4">
+            <div className="col-11 col-lg-5 m-4">
                 <TituloSeccion title={strings.longGoals} />
                 <ContenedorMeta 
                 imagen="7" 
                 descripcion={strings.competir}
+                icon="fas fa-check-circle"
                 />
                 <ContenedorMeta 
                 imagen="8" 
                 descripcion={strings.vinculo}
+                icon="fas fa-business-time"
                 />
                 <ContenedorMeta 
                 imagen="9" 
                 descripcion={strings.host}
+                icon="fas fa-check-circle"
                 />
                 <ContenedorMeta 
                 imagen="10" 
                 descripcion={strings.participar}
+                icon="fas fa-business-time"
                 />
             </div>
 
