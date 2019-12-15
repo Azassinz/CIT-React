@@ -153,6 +153,11 @@ class Conocenos extends React.Component {
                         nombre="Andrea Payan"
                         puesto={strings.log}
                     />
+                    <TarjetaMiembro
+                        imagen="rubi"
+                        nombre="Rubí Aguirre"
+                        puesto={strings.innovacion}
+                    />
                 </div>
             </div>
         );
