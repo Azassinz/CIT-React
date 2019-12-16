@@ -37,6 +37,10 @@ html {
 }
 /** fin colores texto **/
 
+.lista {
+  list-style: disc;
+}
+
 /**tarjetas nosotros **/
 .single-service {
   position: relative;

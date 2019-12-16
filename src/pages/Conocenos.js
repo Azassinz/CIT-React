@@ -21,7 +21,8 @@ let strings = new LocalizedStrings({
       hr: "Manejo de Personal - Fundador",
       innovacion: "Innovación",
       vinculacion: "Vinculación - Fundador",
-      pClub: "Club de Programación - Fundador"
+      pClub: "Club de Programación - Fundador",
+      proyectos:"Innovación de proyectos tecnológicos - Fundador"
     },
     en: {
       conocenos: "Know us",
@@ -39,7 +40,8 @@ let strings = new LocalizedStrings({
       hr: "Human Resources - Founder",
       innovacion: "Innovation",
       vinculacion: "Linking Relations - Founder",
-      pClub: "Programming Club - Founder"
+      pClub: "Programming Club - Founder",
+      proyectos:"Technological projects leader - Founder"
     }
 });
 
@@ -70,9 +72,14 @@ class Conocenos extends React.Component {
                     />
                     <TarjetaMiembro
                         imagen="pinedo"
-                        nombre="Fernando Pinedo "
+                        nombre="Fernando Pinedo"
                         puesto={strings.secretario}
                         enlace="https://www.linkedin.com/in/fernando-josue-pinedo-a85398128/"
+                    />
+                    <TarjetaMiembro
+                        imagen="panchito"
+                        nombre="Francisco Medellin"
+                        puesto={strings.proyectos}
                     />
                     <TarjetaMiembro
                         imagen="nico"

@@ -14,8 +14,8 @@ let strings = new LocalizedStrings({
         us: "Nosotros",
         mision: "Misión",
         vision: "Visión",
-        textmision: "Ser un grupo de estudiantes multidisciplinario que impulse la aplicación de las nuevas tendencias tecnológicas en el sector público y privado, representando con orgullo al Instituto Tecnológico de Saltillo.",
-        textvision: "Ser reconocidos como el grupo estudiantil modelo para la incursión de las nuevas tecnologías y promoverlas dentro de nuestra comunidad, en sinergia con el “HUB Innovación Coahuila 4.0”.",
+        textmision: "Impulsar el desarrollo colectivo utilizando la tecnología como herramienta para generar un cambio positivo en la comunidad.",
+        textvision: "Ser reconocidos como el grupo estudiantil modelo para la incursión de las nuevas tecnologías y promoverlas dentro de nuestra comunidad.",
         weare: "¿Qué nos representa?",
         Humildad: "Humildad",
         Pasion: "Pasión",
@@ -33,8 +33,8 @@ let strings = new LocalizedStrings({
         us: "Us",
         mision: "Mission",
         vision: "Vision",
-        textmision: "To be a multidisciplinary group of students that promotes the application of new technological trends in the public and private sectors, proudly representing Instituto Tecnológico de Saltillo.",
-        textvision: "To be recognized as the model student group for the incursion of new technologies and promote them within our community, in synergy with the “HUB Innovación Coahuila 4.0 ”.",
+        textmision: "Promote collective development using technology as a tool to generate a positive change in the community.",
+        textvision: "To be recognized as the model student group for the incursion of new technologies and promote them within our community.",
         weare: "¿What define us?",
         Humildad: "Lowliness",
         Pasion: "Passion",
@@ -42,7 +42,7 @@ let strings = new LocalizedStrings({
         Liderazgo: "Leadership",
         Respeto: "Respect",
         Compromiso: "Commitment",
-        Identidad: "Identity    ",
+        Identidad: "Identity",
     }
 });
 
