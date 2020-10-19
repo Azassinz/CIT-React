@@ -14,7 +14,7 @@ import { Collapse,
   Nav,
   NavItem,
   UncontrolledDropdown,
-  Button } from 'reactstrap';
+ } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import LocalizedStrings from 'react-localization';
 
@@ -25,6 +25,7 @@ let strings = new LocalizedStrings({
       conocenos: "Conócenos",
       Metas: "Metas",
       noticias: "Noticias",
+      blog: "Blog",
       noMatch:"No se encuentra"
     },
     en: {
@@ -33,6 +34,7 @@ let strings = new LocalizedStrings({
       conocenos: "Know us",
       Metas: "Goals",
       noticias: "News",
+      blog: "Blog",
       noMatch:"No match for"
     }
 });
@@ -66,7 +68,7 @@ export default class App extends React.Component {
     }
     return (
       <Router>
-        <div>
+        <div className="app">
 
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/" className="mr-auto">
@@ -88,7 +90,10 @@ export default class App extends React.Component {
                 <Link to="/noticias" className="p gris text-decoration-none m-2" >{strings.noticias}</Link>
               </NavItem>
               <NavItem>
-                <Button className="text-decoration-none gris ml-2 mr-2 mt-0 mb-0 p-0" color="link" onClick={this.changeLang}>{strings.nextLang}</Button>
+                <a href="https://www.blog.cit-its.org/" className="p gris text-decoration-none m-2" target="_blank" rel="noreferrer noopener" >{strings.blog}</a>
+              </NavItem>
+              <NavItem>
+                <a className="text-decoration-none gris ml-2 mr-2 mt-0 mb-0 p-0" color="link" onClick={this.changeLang}>{strings.nextLang}</a>
               </NavItem>
               <UncontrolledDropdown nav inNavbar />
             </Nav>

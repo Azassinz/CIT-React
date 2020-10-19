@@ -50,7 +50,7 @@ class Home extends React.Component {
   render() {
     strings.setLanguage(this.props.language);
     return (
-      <div>
+      <div className="content-wrap">
         <Jumbotron 
             title={strings.unete}
             descripcion={strings.somos} 

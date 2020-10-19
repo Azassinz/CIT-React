@@ -17,7 +17,7 @@ class Noticias extends React.Component {
     render() {
         strings.setLanguage(this.props.language);
         return (
-            <div className="row m-0 justify-content-center">
+            <div className="row m-0 justify-content-center content-wrap">
                 <div className="col-12 justify-content-center">
                     <TituloSeccion title={strings.noticias} />
                 </div>

@@ -50,7 +50,7 @@ class Footer extends React.Component {
                         <div className="col-md-7 col-lg-8">
 
                             <p className="text-center text-md-left">
-                                © 2019 Copyright:
+                                © 2020 Copyright:
                                 <a className="gris" href="https://cit-its.org" >
                                     <strong>cit-its.org</strong>
                                 </a>
@@ -68,6 +68,16 @@ class Footer extends React.Component {
                                     <li className="list-inline-item">
                                         <a href="https://www.instagram.com/cit_its/" target="_blank" rel="noreferrer noopener" aria-label="CIT Instagram" className="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i className="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="https://www.youtube.com/channel/UChobrGCsXmtI48jJvKHrmLA" target="_blank" rel="noreferrer noopener" aria-label="CIT Conecta YouTube" className="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i className="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="https://open.spotify.com/show/0nW3L3rj0D63gDI2DslsQ7?si=ybktGW3fTWyvVWiPmAdPxA" target="_blank" rel="noreferrer noopener" aria-label="CIT Conecta Spotify" className="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i className="fab fa-spotify"></i>
                                         </a>
                                     </li>
                                 </ul>

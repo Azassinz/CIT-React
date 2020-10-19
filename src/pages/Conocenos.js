@@ -49,7 +49,7 @@ class Conocenos extends React.Component {
     render() {
         strings.setLanguage(this.props.language);
         return (
-            <div>
+            <div className="content-wrap">
                 <TituloSeccion title={strings.conocenos} />
                 <div class="row m-0 text-center justify-content-center">
                     <TarjetaMiembro
@@ -62,7 +62,7 @@ class Conocenos extends React.Component {
                         imagen="davidlopez"
                         nombre="David López"
                         puesto={strings.vice}
-                        enlace="https://www.linkedin.com/in/luis-david-l%C3%B3pez-valdes-b61451153/"
+                        enlace="https://www.linkedin.com/in/luis-david-l%C3%B3pez-valdes/"
                     />
                     <TarjetaMiembro
                         imagen="alex"
@@ -80,11 +80,13 @@ class Conocenos extends React.Component {
                         imagen="panchito"
                         nombre="Francisco Medellin"
                         puesto={strings.proyectos}
+                        enlace="https://www.linkedin.com/in/fmedellinz/"
                     />
                     <TarjetaMiembro
                         imagen="nico"
                         nombre="Nicolás Cázares"
                         puesto={strings.tesorero}
+                        enlace="https://www.linkedin.com/in/nicol%C3%A1s-c%C3%A1zares-mandujano-1191561a3/"
                     />
                     <TarjetaMiembro
                         imagen="sergio"
@@ -114,11 +116,13 @@ class Conocenos extends React.Component {
                         imagen="janice"
                         nombre="Janice Herrera"
                         puesto={strings.rs}
+                        enlace="https://www.linkedin.com/in/janice-alesha-herrera-alvarez-323490183/"
                     />
                     <TarjetaMiembro
                         imagen="guillermo"
                         nombre="Guillermo Villarreal"
                         puesto={strings.mecanica}
+                        enlace="https://www.linkedin.com/in/guillermo-villarreal-0791791b7/"
                     />
                     <TarjetaMiembro
                         imagen="mariana"
@@ -129,21 +133,25 @@ class Conocenos extends React.Component {
                         imagen="gabriela"
                         nombre="Gabriela Gonzalez"
                         puesto={strings.programador}
+                        enlace="https://www.linkedin.com/in/gabriela-gonzalez-9a70541b1/"
                     />
                     <TarjetaMiembro
                         imagen="salma"
                         nombre="Salma Webb"
                         puesto={strings.programador}
+                        enlace="https://www.linkedin.com/in/salma-webb-140b83160/"
                     />
                     <TarjetaMiembro
                         imagen="abel"
                         nombre="Abel Monsivais"
                         puesto={strings.hr}
+                        enlace="https://www.linkedin.com/in/abel-monsivais-badillo-93295a191/"
                     />
                     <TarjetaMiembro
                         imagen="kineret"
                         nombre="Kineret Rivera"
                         puesto={strings.vinculacion}
+                        enlace="https://www.linkedin.com/in/marcela-kineret-rivera-2021a9183/"
                     />
                     <TarjetaMiembro
                         imagen="marcela"
@@ -164,6 +172,7 @@ class Conocenos extends React.Component {
                         imagen="rubi"
                         nombre="Rubí Aguirre"
                         puesto={strings.innovacion}
+                        enlace="https://www.linkedin.com/in/rubi-aguirre-90716419a/"
                     />
                 </div>
             </div>

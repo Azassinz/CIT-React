@@ -39,7 +39,7 @@ class Metas extends Component {
   render() {
     strings.setLanguage(this.props.language);
     return (
-        <div className="row container-fluid justify-content-center mb-xl-5 pb-xl-2">
+        <div className="row container-fluid justify-content-center mb-xl-5 pb-xl-2 content-wrap">
 
             <div className="col-11 col-lg-5 m-4">
                 <TituloSeccion title={strings.shortGoals} />
