@@ -90,7 +90,7 @@ export default class App extends React.Component {
                 <Link to="/noticias" className="p gris text-decoration-none m-2" >{strings.noticias}</Link>
               </NavItem>
               <NavItem>
-                <a href="https://www.blog.cit-its.org/" className="p gris text-decoration-none m-2" target="_blank" rel="noreferrer noopener" >{strings.blog}</a>
+                <a href="https://www.blog.citmx.org/" className="p gris text-decoration-none m-2" target="_blank" rel="noreferrer noopener" >{strings.blog}</a>
               </NavItem>
               <NavItem>
                 <a className="text-decoration-none gris ml-2 mr-2 mt-0 mb-0 p-0" color="link" onClick={this.changeLang}>{strings.nextLang}</a>

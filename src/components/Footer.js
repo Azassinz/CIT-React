@@ -35,8 +35,8 @@ class Footer extends React.Component {
                             <h6 className="text-uppercase mb-4 font-weight-bold">{strings.Contacto}</h6>
                             <p><i className="fas fa-home mr-3"></i> Saltillo, Coah. 25280, México</p>
                             <p>
-                                <a role="button" value="Enviar un email" href={"mailto:contacto@cit-its.org"} className="gris" >
-                                    <i className="fas fa-envelope mr-3" ></i>contacto@cit-its.org
+                                <a role="button" value="Enviar un email" href={"mailto:contacto@citmx.org"} className="gris" >
+                                    <i className="fas fa-envelope mr-3" ></i>contacto@citmx.org
                                 </a>
                             </p>
                         </div>
@@ -50,9 +50,9 @@ class Footer extends React.Component {
                         <div className="col-md-7 col-lg-8">
 
                             <p className="text-center text-md-left">
-                                © 2020 Copyright:
-                                <a className="gris" href="https://cit-its.org" >
-                                    <strong>cit-its.org</strong>
+                                © 2021 Copyright:
+                                <a className="gris" href="https://citmx.org" >
+                                    <strong>citmx.org</strong>
                                 </a>
                             </p>
                         </div>

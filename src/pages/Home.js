@@ -9,7 +9,7 @@ let strings = new LocalizedStrings({
     es: {
         unete: "¡Únete!",
         somos: "Somos un grupo multidiscplinario de estudiantes que comparte el interés de impulsar las nuevas tendencias.",
-        cv: "Envía tu CV ahora a contacto@cit-its.org",
+        cv: "Envía tu CV ahora a contacto@citmx.org",
         correo: "Enlace al correo",
         us: "Nosotros",
         mision: "Misión",
@@ -28,7 +28,7 @@ let strings = new LocalizedStrings({
     en: {
         unete: "Join us!",
         somos: "We are a multidisciplinary group of students who share the interest of driving new trends.",
-        cv: "Send now your CV to contacto@cit-its.org",
+        cv: "Send now your CV to contacto@citmx.org",
         correo: "Link to mail",
         us: "Us",
         mision: "Mission",
@@ -56,7 +56,7 @@ class Home extends React.Component {
             descripcion={strings.somos} 
             info={strings.cv}
             boton={strings.correo}
-            email="contacto@cit-its.org"
+            email="contacto@citmx.org"
         />
 
         
